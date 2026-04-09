@@ -7,7 +7,7 @@ A simple weather application that fetches real-time weather data using an API an
 
 * Search weather by city name
 * Displays:
-  * Location (City, Region, Country)
+  * Location (City, Country)
   * Weather condition
   * Temperature (°C)
   * Humidity
