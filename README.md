@@ -46,6 +46,14 @@ A simple weather application that fetches real-time weather data using an API an
 * Add weather icons and animations
 * Responsive design for mobile
 
+# Screenshots
+
+<p>
+<img src="assets/full logo.png">
+<img src="assets/normal look.png">
+<img src="assets/added value look.png">
+<img src="assets/Full page look.png">
+</p>
 
 
 # Author
