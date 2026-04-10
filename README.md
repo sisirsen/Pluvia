@@ -22,7 +22,7 @@ A simple weather application that fetches real-time weather data using an API an
 * HTML
 * CSS
 * JavaScript (DOM + Fetch API)
-* Weather API <!-- https://api.weatherapi.com/v1/current.json?key=b28fdeda371449df927174122260804&q=dubai -->
+* Weather API- https://api.weatherapi.com/v1/current.json?key=b28fdeda371449df927174122260804&q=dubai 
 
 
 # How It Works
