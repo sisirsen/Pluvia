@@ -31,11 +31,11 @@ async function weather(){
   let databox=(`
     <div class="flex flex-wrap justify-center cursor-pointer item-center mt-7 gap-3">
     <div class=" w-[200px] flex flex-wrap justify-center items-center h-[75px] bg-gray-600 text-white text-lg font-bold rounded-xl p-4 shadow-lg transition duration-300 ease-in-out 
-    hover:-translate-y-1 hover:shadow-lg hover:bg-blue-600">${dataInp.location.name}, ${dataInp.location.country}</div>
+    hover:-translate-y-1 hover:shadow-lg hover:bg-blue-700">${dataInp.location.name}, ${dataInp.location.country}</div>
 
 
     <div class=" w-[200px] flex flex-wrap h-[75px] cursor-pointer font-bold justify-center items-center gap-2 content bg-gray-600 text-white text-lg rounded-xl p-1 shadow-lg transition duration-300 ease-in-out 
-    hover:-translate-y-1 hover:shadow-lg hover:bg-blue-600"  ><img src="https:${dataInp.current.condition.icon}"> ${ dataInp.current.condition.text}</div>
+    hover:-translate-y-1 hover:shadow-lg hover:bg-blue-700"  ><img src="https:${dataInp.current.condition.icon}"> ${ dataInp.current.condition.text}</div>
 
 
     <div class="w-[130px] flex flex-wrap cursor-pointer font-bold justify-center items-center h-fit content bg-gray-600 text-white text-[48px] rounded-xl p-2 shadow-lg transition duration-300 ease-in-out 
@@ -43,12 +43,12 @@ async function weather(){
     ${ Math.round(dataInp.current.temp_c)+`°C`}</div>
 
     <div class="w-[130px] flex flex-wrap cursor-pointer font-bold h-fit justify-center items-center content bg-gray-600 text-white text-[20px] rounded-xl gap-3 p-2 shadow-lg transition duration-300 ease-in-out 
-    hover:-translate-y-1 hover:shadow-lg hover:bg-blue-600">
+    hover:-translate-y-1 hover:shadow-lg hover:bg-blue-700">
     ${`<h1 class="font-bold text-md">Humidity(%)</h1>`+ 
       Math.round(dataInp.current.humidity)}%</div>
 
     <div  class="w-[130px] flex flex-wrap cursor-pointer font-bold h-fit justify-center items-center content bg-gray-600 text-white text-[15px] rounded-xl gap-6 p-2 shadow-lg transition duration-300 ease-in-out 
-    hover:-translate-y-1 hover:shadow-lg hover:bg-blue-600">${`<h1 class="font-bold text-md">WindSpeed(kph)</h1>`+ Math.round(dataInp.current.wind_kph)+`Km/h`}</div>
+    hover:-translate-y-1 hover:shadow-lg hover:bg-blue-700">${`<h1 class="font-bold text-md">WindSpeed(kph)</h1>`+ Math.round(dataInp.current.wind_kph)+`Km/h`}</div>
 
     </div>
 
