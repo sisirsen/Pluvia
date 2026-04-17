@@ -24,40 +24,42 @@ async function weather(){
 
 
   if (dataInp.error) {
-    data.innerHTML= `<p>Sorry! Your "${val}" is not matching our terms , is it a city are you sure?</p>`
+    data.innerHTML= `<p class="flex justify-center bg-red-500 text-white font-bold p-2 rounded-lg" > 😞Sorry! Your "${val}" is not matching our terms , is it a city are you sure?</p>`
     return
   }
+let databox = (`
+  <div class="flex flex-col md:flex-row md:flex-wrap justify-center items-center mt-6 gap-3">
 
-  let databox=(`
-    <div class="flex flex-wrap justify-center cursor-pointer item-center mt-7 gap-3">
-    <div class=" w-[200px] flex flex-wrap justify-center items-center h-[75px] bg-gray-600 text-white text-lg font-bold rounded-xl p-4 shadow-lg transition duration-300 ease-in-out 
-    hover:-translate-y-1 hover:shadow-lg hover:bg-blue-700">${dataInp.location.name}, ${dataInp.location.country}</div>
-
-
-    <div class=" w-[200px] flex flex-wrap h-[75px] cursor-pointer font-bold justify-center items-center gap-2 content bg-gray-600 text-white text-lg rounded-xl p-1 shadow-lg transition duration-300 ease-in-out 
-    hover:-translate-y-1 hover:shadow-lg hover:bg-blue-700"  ><img src="https:${dataInp.current.condition.icon}"> ${ dataInp.current.condition.text}</div>
-
-
-    <div class="w-[130px] flex flex-wrap cursor-pointer font-bold justify-center items-center h-fit content bg-gray-600 text-white text-[48px] rounded-xl p-2 shadow-lg transition duration-300 ease-in-out 
-    hover:-translate-y-1 hover:shadow-lg hover:bg-blue-600">
-    ${ Math.round(dataInp.current.temp_c)+`°C`}</div>
-
-    <div class="w-[130px] flex flex-wrap cursor-pointer font-bold h-fit justify-center items-center content bg-gray-600 text-white text-[20px] rounded-xl gap-3 p-2 shadow-lg transition duration-300 ease-in-out 
-    hover:-translate-y-1 hover:shadow-lg hover:bg-blue-700">
-    ${`<h1 class="font-bold text-md">Humidity(%)</h1>`+ 
-      Math.round(dataInp.current.humidity)}%</div>
-
-    <div  class="w-[130px] flex flex-wrap cursor-pointer font-bold h-fit justify-center items-center content bg-gray-600 text-white text-[15px] rounded-xl gap-6 p-2 shadow-lg transition duration-300 ease-in-out 
-    hover:-translate-y-1 hover:shadow-lg hover:bg-blue-700">${`<h1 class="font-bold text-md">WindSpeed(kph)</h1>`+ Math.round(dataInp.current.wind_kph)+`Km/h`}</div>
-
+    <div class="w-full md:w-[200px] flex justify-center items-center h-[70px] bg-gray-600 text-white text-lg font-bold rounded-xl p-3 shadow-lg">
+      ${dataInp.location.name}, ${dataInp.location.country}
     </div>
 
-  `)
+    <div class="w-full md:w-[200px] flex justify-center items-center gap-2 bg-gray-600 text-white text-lg font-bold rounded-xl p-3 shadow-lg">
+      <img class="h-10 w-10" src="https:${dataInp.current.condition.icon}">
+      ${dataInp.current.condition.text}
+    </div>
+
+    <div class="w-full md:w-[130px] flex justify-center items-center bg-gray-600 text-white text-4xl font-bold rounded-xl p-3 shadow-lg">
+      ${Math.round(dataInp.current.temp_c)}°C
+    </div>
+
+    <div class="w-full md:w-[130px] flex flex-col justify-center items-center bg-gray-600 text-white rounded-xl p-3 shadow-lg">
+      <span class="text-sm">Humidity</span>
+      <span class="text-lg font-bold">${Math.round(dataInp.current.humidity)}%</span>
+    </div>
+
+    <div class="w-full md:w-[130px] flex flex-col justify-center items-center bg-gray-600 text-white rounded-xl p-3 shadow-lg">
+      <span class="text-sm">Wind Speed</span>
+      <span class="text-lg font-bold">${Math.round(dataInp.current.wind_kph)} Km/h</span>
+    </div>
+
+  </div>
+`)
 
   data.innerHTML=databox;
   } catch (error) {
     
-    data.innerText="Failed to fetch data from server";
+    data.innerHTML=`<p class="flex justify-center bg-red-500 text-white font-bold p-2 rounded-lg" >⚠️ Failed to fetch data from server </p>`;
   }
 
 
