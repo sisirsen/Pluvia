@@ -30,25 +30,25 @@ async function weather(){
 let databox = (`
   <div class="flex flex-col md:flex-row md:flex-wrap justify-center items-center mt-6 gap-3">
 
-    <div class="w-full md:w-[200px] flex justify-center items-center h-[70px] bg-gray-600 text-white text-lg font-bold rounded-xl p-3 shadow-lg">
+    <div class="w-full md:w-[200px] flex justify-center items-center h-[70px] bg-slate-600 text-white text-lg font-bold rounded-xl p-3 shadow-lg">
       ${dataInp.location.name}, ${dataInp.location.country}
     </div>
 
-    <div class="w-full md:w-[200px] flex justify-center items-center gap-2 bg-gray-600 text-white text-lg font-bold rounded-xl p-3 shadow-lg">
-      <img class="h-10 w-10" src="https:${dataInp.current.condition.icon}">
+    <div class="w-full md:w-[200px] flex justify-center items-center gap-2 bg-slate-600 text-white text-lg font-bold rounded-xl p-3 shadow-lg">
+    <img class="h-10 w-10" src="https:${dataInp.current.condition.icon}">
       ${dataInp.current.condition.text}
     </div>
 
-    <div class="w-full md:w-[130px] flex justify-center items-center bg-gray-600 text-white text-4xl font-bold rounded-xl p-3 shadow-lg">
+    <div class="w-full md:w-[130px] flex justify-center items-center bg-slate-600 text-white text-4xl font-bold rounded-xl p-3 shadow-lg">
       ${Math.round(dataInp.current.temp_c)}°C
     </div>
 
-    <div class="w-full md:w-[130px] flex flex-col justify-center items-center bg-gray-600 text-white rounded-xl p-3 shadow-lg">
+    <div class="w-full md:w-[130px] flex flex-col justify-center items-center bg-slate-600 text-white rounded-xl p-3 shadow-lg">
       <span class="text-sm">Humidity</span>
       <span class="text-lg font-bold">${Math.round(dataInp.current.humidity)}%</span>
     </div>
 
-    <div class="w-full md:w-[130px] flex flex-col justify-center items-center bg-gray-600 text-white rounded-xl p-3 shadow-lg">
+    <div class="w-full md:w-[130px] flex flex-col justify-center items-center bg-slate-600 text-white rounded-xl p-3 shadow-lg">
       <span class="text-sm">Wind Speed</span>
       <span class="text-lg font-bold">${Math.round(dataInp.current.wind_kph)} Km/h</span>
     </div>
