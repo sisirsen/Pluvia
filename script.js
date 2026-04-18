@@ -4,7 +4,7 @@ let data=document.querySelector("#weaData")
 
 srch.addEventListener("click",()=>{
 
-let val=input.value.trim();
+let val=input.value.trim().toLowerCase();
 
 if (val==="") {
   alert("Enter a valid Input");
