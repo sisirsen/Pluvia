@@ -7,7 +7,7 @@ srch.addEventListener("click",()=>{
 let val=input.value.trim().toLowerCase();
 
 if (val==="") {
-  alert("Enter a valid Input");
+  data.innerHTML=`<p class="flex justify-center mt-5 bg-red-500 text-white font-bold p-2 rounded-lg">⚠️ There is no input !</p>`
   return
 }
 
