@@ -50,8 +50,10 @@ A simple weather application that fetches real-time weather data using an API an
 
 ![LogoImage](assets/full%20Logo.png)
 ![NormLook](assets/Normal%20look.png)
+![Error Handling](assets/Err1.png)
+![Error Handling 2](assets/err2.png)
 ![addedValue](assets/Added%20Value%20look.png)
-![fullPage](assets/Full%20page%20Look.png)
+![fullPage](assets/Full%20page.png)
 
 
 # Author
