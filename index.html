@@ -23,7 +23,7 @@
   <div class="w-full max-w-md backdrop-blur-lg bg-white/0 rounded-2xl p-4 shadow-xl">
 
     <!-- Logo -->
-    <div class="flex gap-2 justify-center text-white items-center font-bold text-xl md:text-2xl">
+    <div class="flex gap-2 justify-center  cursor-none text-white items-center font-bold text-xl md:text-2xl">
       <img class="h-6 w-6 md:h-7 md:w-7" src="assets/logo.png">
       Pluvia
     </div>
@@ -37,14 +37,22 @@
         type="text" 
         placeholder="Enter a city name..."
       > 
-      
-      <button 
+      <div class="relative group inline-block">
+        <button 
         id="Search" 
-        class="w-full md:w-[140px] cursor-pointer text-black rounded-xl text-lg flex justify-center bg-blue-500 p-2
+        class="w-103 md:w-[120px] cursor-pointer text-black rounded-xl text-lg flex justify-center bg-blue-500 p-2
         hover:bg-blue-600"
       >
         Search
       </button>
+    <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 
+               opacity-0 group-hover:opacity-100 
+               transition duration-500
+               bg-slate-300 text-black text-xs px-2 py-1 rounded whitespace-nowrap">
+    Click to search data
+  </span>
+    </div>
+      
 
     </div>
 
