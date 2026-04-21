@@ -48,11 +48,11 @@ A simple weather application that fetches real-time weather data using an API an
 
 # Screenshots
 
-![LogoImage](assets/full%20Logo.png)
-![NormLook](assets/Normal%20look.png)
+![LogoImage](assets/FullLogo.png)
+![NormLook](assets/NormalLook.png)
 ![Error Handling](assets/Err1.png)
 ![Error Handling 2](assets/err2.png)
-![addedValue](assets/Added%20Value%20look.png)
+![addedValue](assets/AddedValueLook.png)
 ![fullPage](assets/Full%20page.png)
 
 
