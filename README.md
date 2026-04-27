@@ -2,6 +2,10 @@
 
 A simple weather application that fetches real-time weather data using an API and displays it in a clean user interface.
 
+# Live Link
+
+https://pluvia-sable.vercel.app/
+
 
 # Features
 
