@@ -52,11 +52,19 @@ https://pluvia-sable.vercel.app/
 
 # Screenshots
 
-![LogoImage](assets/FullLogo.png)
+# Normal Look
 ![NormLook](assets/NormalLook.png)
+
+# Wrong Input Error
 ![Error Handling](assets/Err1.png)
+
+# API Error
 ![Error Handling 2](assets/err2.png)
+
+# View After API Call
 ![addedValue](assets/AddedValueLook.png)
+
+# Full Page View
 ![fullPage](assets/Full%20page.png)
 
 
